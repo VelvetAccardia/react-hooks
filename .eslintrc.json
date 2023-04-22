@@ -23,6 +23,9 @@
     ],
     "rules": {
         "prettier/prettier": "error",
-        "camelcase": "off"
+        "camelcase": "off",
+        "semi": "warn",
+        "react/react-in-jsx-scope": "off",
+        "react/prop-types": "off"
     }
 }
