@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-interface TaskInputProps {
+export interface TaskInputProps {
   addTask: (title: string) => void;
 }
 
