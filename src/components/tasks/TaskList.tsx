@@ -2,7 +2,7 @@ import { useState } from 'react';
 import TaskInput from './TaskInput';
 import Task from './Task';
 
-interface TaskItem {
+export interface TaskItem {
   id: string;
   title: string;
   completed: boolean;

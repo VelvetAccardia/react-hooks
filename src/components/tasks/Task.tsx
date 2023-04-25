@@ -20,10 +20,15 @@ const Task: React.FC<TaskProps> = ({
         checked={completed}
         onChange={() => toggleTask(id)}
       />
-      <div style={{ textDecoration: completed ? 'line-through' : 'none' }}>
+      <div
+        className="task-title"
+        style={{ textDecoration: completed ? 'line-through' : 'none' }}
+      >
         {title}
       </div>
-      <button onClick={() => deleteTask(id)}>Remover</button>
+      <button aria-label={`Remover ${title}`} onClick={() => deleteTask(id)}>
+        Remover
+      </button>
     </div>
   );
 };
